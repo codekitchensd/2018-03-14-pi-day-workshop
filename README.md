@@ -97,6 +97,8 @@ We're going to plug in a button, a resistor, and an LED, and then we're going to
 
 ![illustration of the circuit, with a button connecting ground to GPIO pin 2, and GPIO pin 17 going through a resistor to an LED to ground](./img/breadcircuit.png)
 
+_Fritzing source file: [pi-pi-pi-day.fzz](./pi-pi-pi-day.fzz)_
+
 The LED has a short leg and a long leg; the short leg goes to ground, like it's leaning back. Also, note that the pushbutton is a switch that connects diagonal corners.
 
 Don't connect the jumper cables to the Pi *quite* yet, because we first need to explain something important about the GPIO pins.

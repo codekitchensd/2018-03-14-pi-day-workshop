@@ -89,7 +89,8 @@ In the tiny mini-breadboards we're using, all of the holes in a row (on each sid
 
 ![this is what a mini breadboard looks like, and it has a furrow in the middle to separate the two sides of five-pin rows](./img/breadboard.png)
 
-We're going to plug in a button, a resistor, and an LED, and then we're going to plug in the circuit to the GPIO pins on the Pi. Here's a schematic of what it will look like:
+We're going to plug in a button, a resistor, and an LED, and then we're going to plug in the circuit to the GPIO pins on the Pi. Here's a schematic of what it will look like:  
+
 ![schematic of the circuit, with a button connecting ground to GPIO pin 2, and GPIO pin 17 going through a resistor to an LED to ground](./img/schematic.png)
 
 …and here's a [Fritzing](https://fritzing.org) drawing.

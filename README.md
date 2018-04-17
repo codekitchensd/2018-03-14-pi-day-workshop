@@ -127,6 +127,8 @@ Connect the circuit as shown:
 
 ![and here is an illustration of the full circuit including how it is connected to the Raspberry Pi](./img/circuit.png)
 
+Black jumper wire to ground. White jumper wire to GPIO pin 2. Red jumper wire to GPIO pin 17.
+
 ## Telling the Pi what to do
 
 We're not hooking a screen or keyboard or mouse to the Pi so how do we tell it what to do? 

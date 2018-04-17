@@ -2,15 +2,13 @@
 
 Description from the [Meetup](https://www.meetup.com/San-Diego-Code-Kitchen/events/248713417/):
 
-> Ain't no lie, baby, Pi Pi Pi day is here. We'll be celebrating with some fun Raspberry Pi* (and Actual Pie 🥧) activities. Whether you like learning electronics with tiny credit-card-sized computers OR eating delicious pie, mark your calendars for this special event. If you have your own Raspberry Pi, go ahead and bring it! Please bring a laptop, too, if you have one. We'll be bringing microSD cards pre-loaded with PiBakery images, and we'll have 5-6 Raspberry Pi computers on hand, plus jumper wires and breadboards, so attendees can
-> • work together in groups to set up a Pi,
-> • hook it to a breadboard with a physical button, and
-> • make some Fun Things happen. 🔊🚨📡
+> Ain't no lie, baby, Pi Pi Pi day is here. We'll be celebrating with some fun Raspberry Pi* (and Actual Pie 🥧) activities. Whether you like learning electronics with tiny credit-card-sized computers OR eating delicious pie, mark your calendars for this special event. If you have your own Raspberry Pi, go ahead and bring it! Please bring a laptop, too, if you have one. We'll be bringing microSD cards pre-loaded with PiBakery images, and we'll have 5-6 Raspberry Pi computers on hand, plus jumper wires and breadboards, so attendees can  
+> • work together in groups to set up a Pi,  
+> • hook it to a breadboard with a physical button, and  
+> • make some Fun Things happen. 🔊🚨📡  
 
 Yes, there was delicious pie.
 ✨🥧:sparkles:	
-
-[TOC]
 
 ## Hello, Raspberry Pi.
 
@@ -30,7 +28,7 @@ A few years back, installing the OS was a painful process that would take hours 
 
 Here's the recipe we used to set up the Pi computers for this workshop:
 
-![recipe explained](./img/pibakery.png)
+![screenshot of the pibakery recipe](./img/pibakery.png)
 
 Download the recipe: [pi-pi-pi-recipe.xml](./pi-pi-pi-recipe.xml)
 
@@ -77,7 +75,7 @@ TRRS means tip, ring, ring, sleeve—which just means that the headphone jack ha
 
 ⚠️ [There are different TRRS standards!](https://en.wikipedia.org/wiki/Phone_connector_(audio)#TRRS_standards) Raspberry Pi does *not* wire up as labeled on the headphone jack plug from Adafruit.
 
-![](./img/speaker_headphone.png)
+![an illustration showing how the speaker is connected to the headphone plug](./img/speaker_headphone.png)
 
 You're going to want to connect the **positive wire** from the speaker **to** the `L`(**left**) terminal, and the **negative wire to ground**—which for the Pi is not the terminal with the ground symbol, but the unmarked third terminal. 
 
@@ -89,14 +87,14 @@ A breadboard is used for prototyping circuits, and it has a grid of holes into w
 
 In the tiny mini-breadboards we're using, all of the holes in a row (on each side) are connected, but the two sides are not connected.
 
-![](./img/breadboard.png)
+![this is what a mini breadboard looks like, and it has a furrow in the middle to separate the two sides of five-pin rows](./img/breadboard.png)
 
 We're going to plug in a button, a resistor, and an LED, and then we're going to plug in the circuit to the GPIO pins on the Pi. Here's a schematic of what it will look like:
-![]()
+![schematic of the circuit, with a button connecting ground to GPIO pin 2, and GPIO pin 17 going through a resistor to an LED to ground](./img/schematic.png)
 
 …and here's a [Fritzing](https://fritzing.org) drawing.
 
-![](./img/breadcircuit.png)
+![illustration of the circuit, with a button connecting ground to GPIO pin 2, and GPIO pin 17 going through a resistor to an LED to ground](./img/breadcircuit.png)
 
 The LED has a short leg and a long leg; the short leg goes to ground, like it's leaning back. Also, note that the pushbutton is a switch that connects diagonal corners.
 
@@ -110,7 +108,7 @@ The *physical* pins have numbers just so you know which one we're talking about.
 
 However the addresses for these pins—the numbers by which your code and your fellow Pi hackers refer to them—are different from the physical pin numbers. So if someone tells you to connect to GPIO pin 2 (or Broadcom pin 2, or BCM 2) …that's actually *physical pin 3.*  
 
-![](./img/pinout.png)
+![an explanation of the Raspberry Pi's forty general purpose input/output pins](./img/pinout.png)
 
 _(This gets even MORE confusing if you're using a library called "WiringPi," which gives the pins a third number address, but we're not going to go there today.)_
 
@@ -124,7 +122,7 @@ Some pins (as you see above) are ground, some are power. Some are digital only, 
 
 Connect the circuit as shown:
 
-![](./img/circuit.png)
+![and here is an illustration of the full circuit including how it is connected to the Raspberry Pi](./img/circuit.png)
 
 ## Telling the Pi what to do
 

@@ -259,7 +259,8 @@ Can you get it to print a goodbye message when the button is released?
 Copy a doorbell sound over to your Pi, to the `doorbell` folder, using filesharing. If you don't have an MP3 handy to use, or don't want to record your own, we recommend looking for free doorbell sounds on...
 
 - [freesound.org](https://freesound.org/search/?q=doorbell)
-- [internet archive](https://archive.org/details/audio)
+- [Internet Archive](https://archive.org/details/audio)
+- [BBC sound effect library](http://bbcsfx.acropolis.org.uk/) ([free for educational/non-commercial use](https://github.com/bbcarchdev/Remarc/blob/master/doc/2016.09.27_RemArc_Content%20licence_Terms%20of%20Use_final.pdf))
 
 Here's an [example sound](https://archive.org/details/NormCopelandOurDoorbell).
 
